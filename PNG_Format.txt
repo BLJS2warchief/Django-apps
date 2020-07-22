@@ -1,0 +1,48 @@
+Level	Description				type	size	Reference/Save
+000		_MAIN_
+100		PNG Signature			HEX		8
+100		Loop					_REPEAT_		-1
+	110		Chunk Length		INT		4		chunkLength	
+	110		Chunk type			CHAR	4		_EXPANDNEXT_
+	110		_SKIP_				_SKIP_	chunkLength
+	110		CRC				_SKIP_	4
+000		_END_
+
+000		_IHDR_
+100		Width					INT		4		width
+100		Height					INT		4		height
+100		Bit depth				INT		1
+100		Color type				INT		1
+100		Compression method		INT		1
+100		Filter method			INT		1
+100		Interlace method		INT		1
+000		_END_
+
+000		_cHRM_
+100		White Point x			INT		4
+100		White Point y			INT		4
+100		Red x					INT		4
+100		Red y					INT		4
+100		Green x					INT		4
+100		Green y					INT		4
+100		Blue x					INT		4
+100		Blue y					INT		4
+000		_END_
+
+000		_pHYs_
+100		Pixels per unit, X axis	INT		4
+100		Pixels per unit, Y axis	INT		4
+100		Unit specifier			INT		1
+000		_END_
+
+000		_iTXt_
+100		Data					CHAR	chunkLength
+000		_END_
+
+000		_iCCP_
+100		Data					CHAR	chunkLength
+000		_END_
+
+000		_gAMA_
+100		Gamma value			INT			chunkLength
+000		_END_

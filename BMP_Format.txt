@@ -1,0 +1,36 @@
+Level	Description				type	size	Reference/Save
+000		_MAIN_
+100		BMP Signature			CHAR		2
+100		File size				LINT			4
+100		Reserved				HEX			2
+100		Reserved				HEX			2
+100		Image Start				LINT			4
+100		Image Header Size		LINT			4	_EXPANDNEXT_
+100		_SKIP_					4
+000		_END_
+
+000		_40_
+100		Width					LINT		4		width
+100		Height					LINT		4		height
+100		Color Planes			LINT		2
+100		Bit depth				LINT		2
+100		Compression method		LINT		4
+100		Image Size				LINT		4
+100		Horizontal Pix/meter	LINT		4
+100		Vertical Pix/meter		LINT		4
+100		Color Pallette Count	LINT		4
+100		Important Color Count	LINT		4
+000		_END_
+
+000		_124_
+100		Width					LINT		4		width
+100		Height					LINT		4		height
+100		Color Planes			LINT		2
+100		Bit depth				LINT		2
+100		Compression method		LINT		4
+100		Image Size				LINT		4
+100		Horizontal Pix/meter	LINT		4
+100		Vertical Pix/meter		LINT		4
+100		Color Pallette Count	LINT		4
+100		Important Color Count	LINT		4
+000		_END_
