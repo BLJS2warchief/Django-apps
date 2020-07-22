@@ -1,6 +1,6 @@
 # Django-apps
 
-File analyzer
+## File analyzer
 
 • A web based Django application that decodes the various chunks present in an encoded file to learn how the image is made.
 
@@ -8,7 +8,7 @@ File analyzer
 
 • Supported file formats: PNG, BMP, MP4.
 
-PNG to BMP image convertor
+## PNG to BMP image convertor
 
 • Converts images in PNG format to BMP format.
 
